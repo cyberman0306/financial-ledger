@@ -55,7 +55,7 @@ struct AccountRow: View {
             Spacer()
             buttonArea
         }
-        .padding()
+        //.padding()
     }
 }
 

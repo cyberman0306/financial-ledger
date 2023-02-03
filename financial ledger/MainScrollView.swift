@@ -11,24 +11,24 @@ struct MainScrollView: View {
     
     @StateObject var dataManager: AccountDataManager = AccountDataManager.shared
     @State var acCategory: AccountCategory = .none
+    @State var listItem: Array = []
     
     var body: some View {
-        ScrollView() {
-            VStack {
-                ForEach(Array(dataManager.getList(Category: acCategory).enumerated()), id: \.offset) {idx, data in
-                    AccountRow(accountData: data)
-                }
-                
+        List{
+            ForEach(Array(dataManager.getList(Category: acCategory).enumerated()), id: \.offset) {idx, data in
+                AccountRow(accountData: data)
             }
-            
-            .padding()
-            .frame(maxWidth: .infinity)
-            .padding()
+            // 수정중
+            .onDelete { IndexSet in
+               print("1")
+            }
+            //.padding()
+            //.frame(maxWidth: .infinity)
+            //.padding()
         }
-        .frame(width: .infinity)
+        //.frame(width: .infinity)
         .background(.white)
         .cornerRadius(20)
-        .padding()
         CategorySelectionArea(selectedCategory: $acCategory)
     }
 }
@@ -47,10 +47,10 @@ struct CategorySelectionArea: View {
         .background(.white)
         .cornerRadius(20)
         .padding()
-       
-    }
         
-
+    }
+    
+    
 }
 
 struct MainScrollView_Previews: PreviewProvider {

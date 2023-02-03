@@ -61,11 +61,7 @@ class AccountDataManager: ObservableObject {
         return false
     }
     
-    // 수정중
-//    func removeDataList() -> [AccountData] {
-//
-//        var returnList:[AccountData] = acDataList
-//        return acDataList
+
         
         
 }
