@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3187226298CE752003FC294 /* AccountDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187225298CE752003FC294 /* AccountDataManager.swift */; };
 		F31B8C8B29889A5200AE99BA /* financial_ledgerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B8C8A29889A5200AE99BA /* financial_ledgerApp.swift */; };
 		F31B8C8D29889A5200AE99BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B8C8C29889A5200AE99BA /* ContentView.swift */; };
 		F31B8C8F29889A5300AE99BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31B8C8E29889A5300AE99BA /* Assets.xcassets */; };
@@ -14,6 +15,12 @@
 		F31B8C9C29889A5300AE99BA /* financial_ledgerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B8C9B29889A5300AE99BA /* financial_ledgerTests.swift */; };
 		F31B8CA629889A5300AE99BA /* financial_ledgerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B8CA529889A5300AE99BA /* financial_ledgerUITests.swift */; };
 		F31B8CA829889A5300AE99BA /* financial_ledgerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B8CA729889A5300AE99BA /* financial_ledgerUITestsLaunchTests.swift */; };
+		F31B8CB529889B1B00AE99BA /* MainScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B8CB429889B1B00AE99BA /* MainScrollView.swift */; };
+		F31B8CB729889C9700AE99BA /* AccountRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B8CB629889C9700AE99BA /* AccountRow.swift */; };
+		F31B8CB929889DF200AE99BA /* TopArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B8CB829889DF200AE99BA /* TopArea.swift */; };
+		F31B8CBB29889E5200AE99BA /* BottomArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B8CBA29889E5200AE99BA /* BottomArea.swift */; };
+		F31B8CBF2988A24400AE99BA /* AccountBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B8CBE2988A24400AE99BA /* AccountBookModel.swift */; };
+		F31B8CC12988A76E00AE99BA /* InputAccountModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B8CC02988A76E00AE99BA /* InputAccountModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F3187225298CE752003FC294 /* AccountDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDataManager.swift; sourceTree = "<group>"; };
 		F31B8C8729889A5200AE99BA /* financial ledger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "financial ledger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31B8C8A29889A5200AE99BA /* financial_ledgerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = financial_ledgerApp.swift; sourceTree = "<group>"; };
 		F31B8C8C29889A5200AE99BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +52,12 @@
 		F31B8CA129889A5300AE99BA /* financial ledgerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "financial ledgerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31B8CA529889A5300AE99BA /* financial_ledgerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = financial_ledgerUITests.swift; sourceTree = "<group>"; };
 		F31B8CA729889A5300AE99BA /* financial_ledgerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = financial_ledgerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F31B8CB429889B1B00AE99BA /* MainScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScrollView.swift; sourceTree = "<group>"; };
+		F31B8CB629889C9700AE99BA /* AccountRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRow.swift; sourceTree = "<group>"; };
+		F31B8CB829889DF200AE99BA /* TopArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopArea.swift; sourceTree = "<group>"; };
+		F31B8CBA29889E5200AE99BA /* BottomArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomArea.swift; sourceTree = "<group>"; };
+		F31B8CBE2988A24400AE99BA /* AccountBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBookModel.swift; sourceTree = "<group>"; };
+		F31B8CC02988A76E00AE99BA /* InputAccountModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAccountModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +110,13 @@
 			children = (
 				F31B8C8A29889A5200AE99BA /* financial_ledgerApp.swift */,
 				F31B8C8C29889A5200AE99BA /* ContentView.swift */,
+				F31B8CB629889C9700AE99BA /* AccountRow.swift */,
+				F31B8CC02988A76E00AE99BA /* InputAccountModal.swift */,
+				F31B8CB829889DF200AE99BA /* TopArea.swift */,
+				F31B8CBA29889E5200AE99BA /* BottomArea.swift */,
+				F31B8CB429889B1B00AE99BA /* MainScrollView.swift */,
+				F31B8CBE2988A24400AE99BA /* AccountBookModel.swift */,
+				F3187225298CE752003FC294 /* AccountDataManager.swift */,
 				F31B8C8E29889A5300AE99BA /* Assets.xcassets */,
 				F31B8C9029889A5300AE99BA /* Preview Content */,
 			);
@@ -257,8 +278,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3187226298CE752003FC294 /* AccountDataManager.swift in Sources */,
+				F31B8CB729889C9700AE99BA /* AccountRow.swift in Sources */,
+				F31B8CBF2988A24400AE99BA /* AccountBookModel.swift in Sources */,
+				F31B8CBB29889E5200AE99BA /* BottomArea.swift in Sources */,
+				F31B8CB929889DF200AE99BA /* TopArea.swift in Sources */,
+				F31B8CC12988A76E00AE99BA /* InputAccountModal.swift in Sources */,
 				F31B8C8D29889A5200AE99BA /* ContentView.swift in Sources */,
 				F31B8C8B29889A5200AE99BA /* financial_ledgerApp.swift in Sources */,
+				F31B8CB529889B1B00AE99BA /* MainScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

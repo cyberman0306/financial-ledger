@@ -8,14 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            Color.gray.ignoresSafeArea()
+                .opacity(0.2)
+            
+            VStack {
+                TopArea()
+                Spacer()
+                MainScrollView()
+                Spacer()
+                BottomArea()
+            }
+            .padding()
         }
-        .padding()
+        
     }
 }
 
