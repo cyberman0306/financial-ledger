@@ -13,18 +13,16 @@ struct MainScrollView: View {
     @State var acCategory: AccountCategory = .none
     @State var listItem: Array = []
     
+    func deleteItem(at offsets: IndexSet) -> () {
+        dataManager.acDataList.remove(atOffsets: offsets)
+        UserDefaults.standard.set(try? PropertyListEncoder().encode(dataManager.acDataList), forKey: AccountDataManager.ACCOUNT_DATA_LIST_KEY)
+    }
+    
     var body: some View {
         List{
-            ForEach(Array(dataManager.getList(Category: acCategory).enumerated()), id: \.offset) {idx, data in
+            ForEach(Array(dataManager.getList(Category: acCategory).enumerated()), id:\.offset) {idx, data in
                 AccountRow(accountData: data)
-            }
-            // 수정중
-            .onDelete { IndexSet in
-               print("1")
-            }
-            //.padding()
-            //.frame(maxWidth: .infinity)
-            //.padding()
+            }.onDelete(perform: deleteItem)
         }
         //.frame(width: .infinity)
         .background(.white)
